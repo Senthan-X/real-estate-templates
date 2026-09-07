@@ -18,9 +18,10 @@ Each deployment build is a zero-dependency, self-contained HTML file with Base64
 
 ## Current project
 
-Version 2 is located in `templates/nestgrid-marketplace/`.
+Version 3 is located in `templates/nestra-rentals/`.
 
 ## Completed templates
 
 - Version 1: `templates/aurelia-estates/`
 - Version 2: `templates/nestgrid-marketplace/` (initial build)
+- Version 3: `templates/nestra-rentals/` (initial build)
