@@ -1,50 +1,547 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#15150f">
 <title>Solenne Realty — Private Property Advisory</title>
-<meta name="description" content="A refined multilingual real-estate agent portfolio by Senthan & Co.">
-<script>(function(){try{var t=localStorage.getItem('solenne-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}})();</script>
+<meta name="description" content="A refined multilingual private real-estate advisory portfolio by Senthan & Co.">
+<script>
+(function(){try{var t=localStorage.getItem('solenne-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}})();
+</script>
 <style>
-:root{--bg:#f3efe8;--paper:#fffdf9;--ink:#171713;--muted:#706d64;--line:#d8d1c5;--accent:#735b3b;--accent2:#b99a70;--glass:rgba(243,239,232,.84);--shadow:0 24px 70px rgba(40,31,20,.12)}
-@media(prefers-color-scheme:dark){:root{--bg:#121310;--paper:#191a16;--ink:#f3eee4;--muted:#aaa59b;--line:#34352f;--accent:#d1b183;--accent2:#8e7250;--glass:rgba(18,19,16,.86);--shadow:0 24px 70px rgba(0,0,0,.35)}}
-:root[data-theme="light"]{--bg:#f3efe8;--paper:#fffdf9;--ink:#171713;--muted:#706d64;--line:#d8d1c5;--accent:#735b3b;--accent2:#b99a70;--glass:rgba(243,239,232,.84);--shadow:0 24px 70px rgba(40,31,20,.12)}
-:root[data-theme="dark"]{--bg:#121310;--paper:#191a16;--ink:#f3eee4;--muted:#aaa59b;--line:#34352f;--accent:#d1b183;--accent2:#8e7250;--glass:rgba(18,19,16,.86);--shadow:0 24px 70px rgba(0,0,0,.35)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}button,a,input,select,textarea{font:inherit}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.site-header{position:fixed;inset:0 0 auto;z-index:50}.site-header:before{content:"";position:absolute;inset:0;background:var(--glass);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);z-index:-1}.nav{height:76px;display:flex;align-items:center;gap:24px}.brand{font-family:Georgia,serif;font-size:22px;letter-spacing:.08em;margin-right:auto}.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.25em;color:var(--muted)}nav{display:flex;gap:22px;font-size:13px}.controls{display:flex;gap:8px}.iconbtn,.lang{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;height:38px;padding:0 12px}.hero{min-height:100svh;padding:130px 0 70px;display:grid;align-items:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:40vw;height:40vw;border-radius:50%;background:radial-gradient(circle,var(--accent2),transparent 68%);filter:blur(60px);opacity:.12;right:-10vw;top:7vh;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}h1,h2,h3{font-family:Georgia,serif;font-weight:400}.hero h1{font-size:clamp(52px,7vw,104px);line-height:.92;letter-spacing:-.045em;margin:18px 0 26px}.hero p{max-width:610px;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--ink);transition:.25s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--ink);color:var(--bg)}.portrait{aspect-ratio:4/5;border-radius:220px 220px 18px 18px;position:relative;overflow:hidden;box-shadow:var(--shadow);background:#d7ccb9 url('https://images.pexels.com/photos/8815878/pexels-photo-8815878.jpeg?auto=compress&cs=tinysrgb&w=1200') center 25%/cover no-repeat}.portrait:before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,18,15,.62),transparent 52%)}.portrait-card{position:absolute;left:24px;right:24px;bottom:24px;color:white;z-index:2;border-top:1px solid rgba(255,255,255,.55);padding-top:15px;display:flex;justify-content:space-between;gap:20px;align-items:end}.portrait-card strong{display:block;font:26px Georgia,serif}.portrait-card small{font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.8}.portrait-card span{font-size:12px;opacity:.8}.statline{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:28px 12px}.stat strong{display:block;font:34px Georgia,serif}.stat span{font-size:12px;color:var(--muted)}section{padding:110px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}.section-head h2{font-size:clamp(38px,5vw,68px);line-height:1;margin:10px 0}.section-head p{max-width:430px;color:var(--muted)}.properties{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}.property{grid-column:span 4;background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.35s;box-shadow:0 6px 20px rgba(0,0,0,.03)}.property:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.property:nth-child(1){grid-column:span 7}.property:nth-child(2){grid-column:span 5}.visual{aspect-ratio:16/11;position:relative;overflow:hidden;background:#d8d0c4}.visual img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}.property:hover .visual img{transform:scale(1.045)}.visual:after{content:attr(data-code);position:absolute;right:14px;bottom:12px;font-size:9px;letter-spacing:.2em;color:white;background:rgba(18,18,15,.55);padding:7px 9px;border-radius:999px;backdrop-filter:blur(8px)}.property-body{padding:22px}.property h3{font-size:26px;margin:0 0 8px}.meta{display:flex;gap:14px;color:var(--muted);font-size:12px}.price{margin-top:18px;color:var(--accent);font-weight:bold}.image-strip{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;margin-top:22px}.image-strip figure{margin:0;overflow:hidden;border-radius:22px;min-height:340px;position:relative}.image-strip img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.image-strip figcaption{position:absolute;left:18px;bottom:16px;color:white;background:rgba(0,0,0,.44);backdrop-filter:blur(10px);padding:9px 12px;border-radius:999px;font-size:11px;letter-spacing:.08em}.signature{background:var(--paper);border-block:1px solid var(--line)}.concierge{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px}.steps{display:grid;gap:12px}.step{padding:24px;border:1px solid var(--line);border-radius:16px;cursor:pointer;transition:.3s}.step.active{background:var(--ink);color:var(--bg);transform:translateX(12px)}.step b{font:24px Georgia,serif}.step p{margin:8px 0 0;color:var(--muted)}.step.active p{color:inherit;opacity:.7}.panel{min-height:460px;border-radius:28px;padding:42px;color:white;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden;background-image:linear-gradient(to top,rgba(20,17,13,.82),rgba(20,17,13,.08)),url('https://images.pexels.com/photos/30781823/pexels-photo-30781823/free-photo-of-modern-luxury-villa-with-pool-exterior-at-twilight.jpeg?auto=compress&cs=tinysrgb&w=1400');background-size:cover;background-position:center}.panel:before{content:"";position:absolute;inset:0;border:1px solid rgba(255,255,255,.24);border-radius:28px;pointer-events:none}.panel>*{position:relative;z-index:1}.panel h3{font-size:46px;line-height:1;margin:0 0 14px}.panel p{max-width:500px}.about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about-photo{margin-top:40px;aspect-ratio:16/10;border-radius:24px;overflow:hidden}.about-photo img{width:100%;height:100%;object-fit:cover}.quote{font:clamp(32px,4vw,56px)/1.08 Georgia,serif;margin:0}.sold{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.sold article{padding:25px;border-top:1px solid var(--line)}.sold strong{font:26px Georgia,serif}.contact{border-radius:32px;color:white;padding:clamp(30px,6vw,80px);position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(21,20,17,.94),rgba(21,20,17,.75)),url('https://images.pexels.com/photos/32750273/pexels-photo-32750273/free-photo-of-modern-high-rise-apartment-with-city-view.jpeg?auto=compress&cs=tinysrgb&w=1600');background-size:cover;background-position:center}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;position:relative;z-index:1}.contact h2{font-size:clamp(42px,6vw,80px);line-height:.95;margin:10px 0}.contact p{color:rgba(255,255,255,.72)}.form{display:grid;gap:12px}.form input,.form select,.form textarea{width:100%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.06);color:white;padding:15px;border-radius:12px;backdrop-filter:blur(10px)}.form option{color:#111}.form textarea{min-height:110px}.form button{border:0;border-radius:999px;padding:15px;background:white;color:#111}footer{padding:45px 0;color:var(--muted);font-size:12px}.footer{display:flex;justify-content:space-between;gap:20px}.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.in{opacity:1;transform:none}.backtop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink);display:grid;place-items:center;opacity:0;pointer-events:none;transition:.3s;z-index:40}.backtop.show{opacity:1;pointer-events:auto}.menu{display:none}
-@media(max-width:800px){nav{display:none}.menu{display:block}.hero-grid,.concierge,.about,.contact-grid{grid-template-columns:1fr}.hero-grid{gap:36px}.portrait{max-height:620px}.properties{display:grid}.property,.property:nth-child(1),.property:nth-child(2){grid-column:1/-1}.sold{grid-template-columns:1fr 1fr}.section-head{display:block}.image-strip{grid-template-columns:1fr}.image-strip figure{min-height:280px}section{padding:75px 0}.hero h1{font-size:56px}.nav{height:68px}.wrap{width:min(100% - 26px,1180px)}}
-[dir="rtl"] body{text-align:right}[dir="rtl"] .brand{margin-right:0;margin-left:auto}[dir="rtl"] .step.active{transform:translateX(-12px)}
-</style></head>
+:root{
+  --bg:#f3efe7;--paper:#fffdf8;--ink:#171713;--muted:#6f6b61;--line:#d7d0c3;
+  --accent:#7a6040;--accent2:#c6a77d;--sage:#758071;--glass:rgba(245,241,233,.82);
+  --shadow:0 28px 80px rgba(35,28,18,.15);--radius:26px
+}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme]){
+    --bg:#11120f;--paper:#191a16;--ink:#f3eee4;--muted:#aaa59b;--line:#34352f;
+    --accent:#d3b587;--accent2:#8f7351;--sage:#9eaa9a;--glass:rgba(17,18,15,.84);
+    --shadow:0 28px 80px rgba(0,0,0,.38)
+  }
+}
+:root[data-theme="light"]{
+  --bg:#f3efe7;--paper:#fffdf8;--ink:#171713;--muted:#6f6b61;--line:#d7d0c3;
+  --accent:#7a6040;--accent2:#c6a77d;--sage:#758071;--glass:rgba(245,241,233,.82);
+  --shadow:0 28px 80px rgba(35,28,18,.15)
+}
+:root[data-theme="dark"]{
+  --bg:#11120f;--paper:#191a16;--ink:#f3eee4;--muted:#aaa59b;--line:#34352f;
+  --accent:#d3b587;--accent2:#8f7351;--sage:#9eaa9a;--glass:rgba(17,18,15,.84);
+  --shadow:0 28px 80px rgba(0,0,0,.38)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;overflow-x:hidden}
+button,a,input,select,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%}
+.wrap{width:min(1200px,calc(100% - 44px));margin:auto}
+.eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.site-header{position:fixed;inset:0 0 auto;z-index:90}
+.site-header:before{content:"";position:absolute;inset:0;background:var(--glass);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);z-index:-1}
+.nav{height:76px;display:flex;align-items:center;gap:26px}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:22px;letter-spacing:.12em;margin-right:auto}
+.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.28em;color:var(--muted);margin-top:2px}
+.nav-links{display:flex;gap:24px;font-size:12px;letter-spacing:.07em}
+.nav-links a{position:relative}
+.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:var(--accent);transition:.25s}
+.nav-links a:hover:after{right:0}
+.controls{display:flex;gap:8px;align-items:center}
+.iconbtn,.lang{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;height:39px;padding:0 12px}
+.menu{display:none}
+.hero{min-height:100svh;padding:118px 0 68px;position:relative;display:grid;align-items:center}
+.hero:before{content:"";position:absolute;left:-10vw;top:10%;width:42vw;height:42vw;border:1px solid var(--line);border-radius:50%;opacity:.5;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:68px;align-items:center;position:relative}
+.hero-copy{padding-top:20px}
+.hero h1{font:400 clamp(58px,7.6vw,110px)/.88 Georgia,serif;letter-spacing:-.055em;margin:18px 0 24px;max-width:720px}
+.hero p{max-width:610px;color:var(--muted);font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;border-radius:999px;border:1px solid var(--ink);font-size:13px;transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.agent-stage{position:relative;min-height:650px}
+.agent-photo{position:absolute;right:0;top:0;width:76%;height:88%;object-fit:cover;object-position:center 28%;border-radius:240px 240px 26px 26px;box-shadow:var(--shadow);filter:saturate(.92) contrast(.98)}
+.agent-card{position:absolute;left:0;bottom:0;width:58%;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.agent-card b{display:block;font:28px Georgia,serif;margin-bottom:4px}
+.agent-card span{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.agent-number{position:absolute;right:1%;bottom:5%;font:86px Georgia,serif;color:var(--accent);opacity:.32}
+.statline{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line)}
+.stat{padding:30px 16px}
+.stat+ .stat{border-left:1px solid var(--line)}
+.stat strong{display:block;font:38px Georgia,serif}
+.stat span{font-size:12px;color:var(--muted)}
+section{padding:112px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:34px;margin-bottom:42px}
+.section-head h2{font:400 clamp(40px,5vw,70px)/.96 Georgia,serif;margin:10px 0}
+.section-head p{max-width:440px;color:var(--muted)}
+.properties{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.property{grid-column:span 4;background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.3s;position:relative}
+.property:nth-child(1){grid-column:span 7}
+.property:nth-child(2){grid-column:span 5}
+.property:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.property-visual{aspect-ratio:16/11;position:relative;overflow:hidden}
+.property-visual img{height:100%;object-fit:cover;transition:transform .6s}
+.property:hover .property-visual img{transform:scale(1.035)}
+.property-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45))}
+.badge{position:absolute;left:16px;top:16px;z-index:2;background:rgba(255,255,255,.92);color:#181813;padding:8px 11px;border-radius:999px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.property-price{position:absolute;right:16px;bottom:13px;z-index:2;color:white;font:21px Georgia,serif}
+.property-body{padding:22px}
+.property h3{font:28px Georgia,serif;margin:0 0 7px}
+.location{font-size:12px;color:var(--muted);margin-bottom:14px}
+.meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.visual-story{padding-top:8px}
+.story-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+.story-main,.story-side{position:relative;overflow:hidden;border-radius:var(--radius)}
+.story-main{min-height:590px}
+.story-side{min-height:590px;display:grid;grid-template-rows:1fr 1fr;gap:18px;background:transparent;overflow:visible}
+.story-side figure{margin:0;position:relative;overflow:hidden;border-radius:var(--radius)}
+.story-grid img{width:100%;height:100%;object-fit:cover}
+.story-caption{position:absolute;left:24px;bottom:24px;background:rgba(18,18,14,.72);backdrop-filter:blur(10px);color:white;padding:16px 18px;border-radius:15px;max-width:330px}
+.story-caption b{font:22px Georgia,serif;display:block}
+.story-caption span{font-size:11px;opacity:.75}
+.signature{background:var(--paper);border-block:1px solid var(--line)}
+.concierge{display:grid;grid-template-columns:.82fr 1.18fr;gap:60px;align-items:start}
+.signature h2{font:400 55px/1 Georgia,serif;margin:12px 0 16px}
+.signature-copy{color:var(--muted);max-width:430px;margin-bottom:30px}
+.steps{display:grid;gap:10px}
+.step{padding:21px 22px;border:1px solid var(--line);border-radius:16px;cursor:pointer;transition:.3s;background:transparent;color:var(--ink);text-align:left}
+.step:hover{border-color:var(--accent)}
+.step.active{background:var(--ink);color:var(--bg);transform:translateX(12px)}
+.step b{font:22px Georgia,serif}
+.step p{margin:5px 0 0;color:var(--muted);font-size:12px}
+.step.active p{color:inherit;opacity:.72}
+.panel{min-height:520px;border-radius:30px;padding:42px;color:white;display:flex;flex-direction:column;justify-content:end;position:sticky;top:110px;background-size:cover;background-position:center;overflow:hidden;box-shadow:var(--shadow)}
+.panel:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,15,12,.05),rgba(15,15,12,.78))}
+.panel>*{position:relative}
+.panel h3{font:400 clamp(42px,5vw,68px)/.95 Georgia,serif;margin:10px 0 14px;max-width:620px}
+.panel p{max-width:540px;margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.about h2{font:400 clamp(42px,5vw,68px)/.98 Georgia,serif;margin:12px 0 20px}
+.about p{color:var(--muted)}
+.quote{font:400 clamp(34px,4.4vw,60px)/1.07 Georgia,serif;margin:0}
+.sold{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:70px;border-block:1px solid var(--line)}
+.sold article{padding:28px 24px}
+.sold article+article{border-left:1px solid var(--line)}
+.sold strong{display:block;font:30px Georgia,serif}
+.sold div{color:var(--muted);font-size:12px;margin-top:4px}
+.contact{border-radius:34px;background:var(--ink);color:var(--bg);padding:clamp(34px,6vw,78px);position:relative;overflow:hidden}
+.contact:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.16);border-radius:50%;right:-80px;top:-90px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;position:relative;z-index:1}
+.contact h2{font:400 clamp(44px,6vw,82px)/.92 Georgia,serif;margin:12px 0 20px}
+.contact p{max-width:520px;opacity:.74}
+.form{display:grid;gap:12px}
+.form input,.form select,.form textarea{width:100%;border:1px solid rgba(255,255,255,.24);background:transparent;color:inherit;padding:15px;border-radius:12px;outline:0}
+.form select option{color:#111;background:#fff}
+.form textarea{min-height:116px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--accent2)}
+.form button{border:0;border-radius:999px;padding:15px;background:var(--bg);color:var(--ink)}
+footer{padding:45px 0;color:var(--muted);font-size:12px}
+.footer{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+.backtop{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink);display:grid;place-items:center;opacity:0;pointer-events:none;transition:.3s;z-index:70;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.backtop.show{opacity:1;pointer-events:auto}
+.mobile-panel{display:none}
+[dir="rtl"] body{text-align:right}
+[dir="rtl"] .brand{margin-right:0;margin-left:auto}
+[dir="rtl"] .step{text-align:right}
+[dir="rtl"] .step.active{transform:translateX(-12px)}
+[dir="rtl"] .stat+.stat,[dir="rtl"] .sold article+article{border-left:0;border-right:1px solid var(--line)}
+@media(max-width:860px){
+  .wrap{width:min(100% - 28px,1200px)}
+  .nav-links{display:none}.menu{display:block}
+  .hero{padding-top:105px}
+  .hero-grid,.concierge,.about,.contact-grid,.story-grid{grid-template-columns:1fr}
+  .hero-grid{gap:36px}
+  .hero h1{font-size:clamp(54px,16vw,78px)}
+  .agent-stage{min-height:540px}
+  .agent-photo{width:82%;height:88%}
+  .agent-card{width:62%}
+  .properties{display:grid}
+  .property,.property:nth-child(1),.property:nth-child(2){grid-column:1/-1}
+  .story-main{min-height:430px}
+  .story-side{min-height:auto;grid-template-columns:1fr 1fr;grid-template-rows:none}
+  .story-side figure{min-height:260px}
+  .panel{position:relative;top:auto;min-height:460px}
+  .sold{grid-template-columns:1fr 1fr}
+  .sold article:nth-child(3){border-left:0;border-top:1px solid var(--line)}
+  .sold article:nth-child(4){border-top:1px solid var(--line)}
+  section{padding:78px 0}.section-head{display:block}
+  .mobile-panel{display:none;position:fixed;inset:68px 14px auto;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px;z-index:85;box-shadow:var(--shadow)}
+  .mobile-panel.open{display:grid}
+  .mobile-panel a{padding:13px 8px;border-bottom:1px solid var(--line)}
+}
+@media(max-width:560px){
+  .statline{grid-template-columns:1fr}.stat+.stat{border-left:0;border-top:1px solid var(--line)}
+  .agent-stage{min-height:460px}.agent-photo{width:90%}.agent-card{width:72%}
+  .story-side{grid-template-columns:1fr}.story-side figure{min-height:300px}
+  .sold{grid-template-columns:1fr}.sold article+article,.sold article:nth-child(3){border-left:0;border-top:1px solid var(--line)}
+  .footer{display:block}.footer span{display:block;margin-top:7px}
+}
+</style>
+</head>
 <body>
-<header class="site-header"><div class="wrap nav"><a class="brand" href="#top">SOLENNE<small data-i18n="brandSub">PRIVATE REALTY</small></a><nav><a href="#properties" data-i18n="navProperties">Properties</a><a href="#approach" data-i18n="navApproach">Approach</a><a href="#results" data-i18n="navResults">Results</a><a href="#contact" data-i18n="navContact">Contact</a></nav><div class="controls"><select class="lang" id="lang" aria-label="Language"><option>EN</option><option>ES</option><option>FR</option><option>DE</option><option>PT</option><option>AR</option><option>ZH</option></select><button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button><button class="iconbtn menu" aria-label="Menu">☰</button></div></div></header>
-<main id="top"><section class="hero"><div class="wrap hero-grid"><div class="reveal"><div class="eyebrow" data-i18n="heroEye">Private property advisory · Selected homes</div><h1 data-i18n="heroTitle">Property,<br>personally<br>represented.</h1><p data-i18n="heroText">A quieter, more considered way to buy and sell exceptional homes—guided by one advisor from first conversation to final signature.</p><div class="actions"><a class="btn primary" href="#properties" data-i18n="viewHomes">View selected homes</a><a class="btn" href="#contact" data-i18n="book">Book a private consultation</a></div></div><div class="portrait reveal" role="img" aria-label="Independent real estate advisor"><div class="portrait-card"><div><small>Private advisor</small><strong>Julian Mercer</strong></div><span>Residential · Relocation<br>Private acquisition</span></div></div></div></section>
-<div class="wrap statline reveal"><div class="stat"><strong>12+</strong><span data-i18n="years">Years in residential property</span></div><div class="stat"><strong>180</strong><span data-i18n="clients">Client transactions</span></div><div class="stat"><strong>94%</strong><span data-i18n="referrals">Referral-led introductions</span></div></div>
-<section id="properties"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow" data-i18n="curated">Curated portfolio</div><h2 data-i18n="selected">Selected residences</h2></div><p data-i18n="selectedText">A focused collection of homes chosen for architecture, location and long-term value.</p></div><div class="properties" id="propertyGrid"></div><div class="image-strip reveal"><figure><img loading="lazy" src="https://images.pexels.com/photos/32750273/pexels-photo-32750273/free-photo-of-modern-high-rise-apartment-with-city-view.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Modern high-rise apartment interior"><figcaption>Private viewings · urban residences</figcaption></figure><figure><img loading="lazy" src="https://images.pexels.com/photos/30506378/pexels-photo-30506378/free-photo-of-modern-luxury-apartment-architecture.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Contemporary apartment architecture"><figcaption>City collection</figcaption></figure></div></div></section>
-<section class="signature" id="approach"><div class="wrap concierge"><div><div class="eyebrow" data-i18n="signatureEye">Signature interaction</div><h2 style="font-size:52px" data-i18n="journey">Your property journey</h2><p style="color:var(--muted)" data-i18n="journeyText">Explore how the private-advisory process changes at each stage.</p><div class="steps" id="steps"></div></div><div class="panel reveal"><div class="eyebrow" style="color:white" id="panelKicker"></div><h3 id="panelTitle"></h3><p id="panelText"></p></div></div></section>
-<section id="results"><div class="wrap about"><div class="reveal"><div class="eyebrow" data-i18n="advisor">Your advisor</div><h2 style="font-size:60px" data-i18n="aboutTitle">One relationship. Every detail.</h2><p data-i18n="aboutText">Solenne is built around continuity: one point of contact, thoughtful market intelligence and discreet representation from valuation through negotiation.</p><div class="about-photo"><img loading="lazy" src="https://images.pexels.com/photos/35361412/pexels-photo-35361412/free-photo-of-modern-luxury-house-with-glass-windows-and-wooden-finish.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Contemporary luxury residence"></div></div><blockquote class="quote reveal" data-i18n="quote">“The best property decisions begin with listening—not listings.”</blockquote></div><div class="wrap sold reveal" style="margin-top:70px"><article><strong>21 days</strong><div data-i18n="avgMarket">Average time to agreement</div></article><article><strong>97.8%</strong><div data-i18n="ask">Average achieved vs asking</div></article><article><strong>38</strong><div data-i18n="offMarket">Off-market introductions</div></article><article><strong>4.9/5</strong><div data-i18n="rating">Client experience rating</div></article></div></section>
-<section id="contact"><div class="wrap contact reveal"><div class="contact-grid"><div><div class="eyebrow" style="color:var(--accent2)" data-i18n="private">Private consultation</div><h2 data-i18n="contactTitle">Let’s discuss your next move.</h2><p data-i18n="contactText">Buying, selling, relocating or simply assessing your options? Start with a confidential conversation.</p></div><form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent=I18N[current].sent"><input required data-ph="name" placeholder="Name"><input required type="email" data-ph="email" placeholder="Email"><select><option data-i18n="buying">Buying</option><option data-i18n="selling">Selling</option><option data-i18n="valuation">Valuation</option></select><textarea data-ph="message" placeholder="Tell me what you’re considering"></textarea><button type="submit" data-i18n="send">Request consultation</button></form></div></div></section></main>
-<footer><div class="wrap footer"><span>© 2026 Solenne Realty</span><span data-i18n="credit">Crafted by Senthan & Co</span></div></footer><button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top">SOLENNE<small data-i18n="brandSub">PRIVATE REALTY</small></a>
+    <nav class="nav-links">
+      <a href="#properties" data-i18n="navProperties">Properties</a>
+      <a href="#approach" data-i18n="navApproach">Approach</a>
+      <a href="#results" data-i18n="navResults">Results</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="controls">
+      <select class="lang" id="lang" aria-label="Language">
+        <option>EN</option><option>ES</option><option>FR</option><option>DE</option><option>PT</option><option>AR</option><option>ZH</option>
+      </select>
+      <button class="iconbtn" id="theme" aria-label="Toggle theme">◐</button>
+      <button class="iconbtn menu" id="menu" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#properties" data-i18n="navProperties">Properties</a>
+  <a href="#approach" data-i18n="navApproach">Approach</a>
+  <a href="#results" data-i18n="navResults">Results</a>
+  <a href="#contact" data-i18n="navContact">Contact</a>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <div class="eyebrow" data-i18n="heroEye">Private property advisory · Selected homes</div>
+      <h1 data-i18n="heroTitle">Property,<br>personally<br>represented.</h1>
+      <p data-i18n="heroText">A quieter, more considered way to buy and sell exceptional homes—guided by one advisor from first conversation to final signature.</p>
+      <div class="actions">
+        <a class="btn primary" href="#properties" data-i18n="viewHomes">View selected homes</a>
+        <a class="btn" href="#contact" data-i18n="book">Book a private consultation</a>
+      </div>
+    </div>
+    <div class="agent-stage reveal">
+      <img class="agent-photo" src="https://images.pexels.com/photos/8815878/pexels-photo-8815878.jpeg?auto=compress&amp;dpr=1&amp;h=900&amp;w=900" alt="Real estate advisor portrait">
+      <div class="agent-card"><b>Solenne Hart</b><span data-i18n="agentRole">Private Property Advisor</span></div>
+      <div class="agent-number">01</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap statline reveal">
+  <div class="stat"><strong>12+</strong><span data-i18n="years">Years in residential property</span></div>
+  <div class="stat"><strong>180</strong><span data-i18n="clients">Client transactions</span></div>
+  <div class="stat"><strong>94%</strong><span data-i18n="referrals">Referral-led introductions</span></div>
+</div>
+
+<section id="properties">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow" data-i18n="curated">Curated portfolio</div><h2 data-i18n="selected">Selected residences</h2></div>
+      <p data-i18n="selectedText">A focused collection of homes chosen for architecture, location and long-term value.</p>
+    </div>
+    <div class="properties" id="propertyGrid"></div>
+  </div>
+</section>
+
+<section class="visual-story">
+  <div class="wrap">
+    <div class="story-grid reveal">
+      <figure class="story-main">
+        <img src="https://images.pexels.com/photos/31817156/pexels-photo-31817156/free-photo-of-modern-luxury-villa-with-infinity-pool.jpeg?auto=compress&amp;dpr=1&amp;h=1100&amp;w=1600" alt="Contemporary villa with infinity pool">
+        <figcaption class="story-caption"><b data-i18n="storyTitle">Architecture worth arriving home to.</b><span data-i18n="storyText">Homes selected for proportion, light and lasting appeal.</span></figcaption>
+      </figure>
+      <div class="story-side">
+        <figure><img src="https://images.pexels.com/photos/8082227/pexels-photo-8082227.jpeg?auto=compress&amp;dpr=1&amp;h=850&amp;w=1000" alt="Luxury apartment interior"></figure>
+        <figure><img src="https://images.pexels.com/photos/7031607/pexels-photo-7031607.jpeg?auto=compress&amp;dpr=1&amp;h=850&amp;w=1000" alt="Modern residential exterior"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signature" id="approach">
+  <div class="wrap concierge">
+    <div>
+      <div class="eyebrow" data-i18n="signatureEye">Signature interaction</div>
+      <h2 data-i18n="journey">Your property journey</h2>
+      <p class="signature-copy" data-i18n="journeyText">Explore how the private-advisory process changes at each stage.</p>
+      <div class="steps" id="steps"></div>
+    </div>
+    <div class="panel reveal" id="journeyPanel">
+      <div class="eyebrow" style="color:white" id="panelKicker"></div>
+      <h3 id="panelTitle"></h3><p id="panelText"></p>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap about">
+    <div class="reveal">
+      <div class="eyebrow" data-i18n="advisor">Your advisor</div>
+      <h2 data-i18n="aboutTitle">One relationship. Every detail.</h2>
+      <p data-i18n="aboutText">Solenne is built around continuity: one point of contact, thoughtful market intelligence and discreet representation from valuation through negotiation.</p>
+    </div>
+    <blockquote class="quote reveal" data-i18n="quote">“The best property decisions begin with listening—not listings.”</blockquote>
+  </div>
+  <div class="wrap sold reveal">
+    <article><strong>21 days</strong><div data-i18n="avgMarket">Average time to agreement</div></article>
+    <article><strong>97.8%</strong><div data-i18n="ask">Average achieved vs asking</div></article>
+    <article><strong>38</strong><div data-i18n="offMarket">Off-market introductions</div></article>
+    <article><strong>4.9/5</strong><div data-i18n="rating">Client experience rating</div></article>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact reveal">
+    <div class="contact-grid">
+      <div>
+        <div class="eyebrow" style="color:var(--accent2)" data-i18n="private">Private consultation</div>
+        <h2 data-i18n="contactTitle">Let’s discuss your next move.</h2>
+        <p data-i18n="contactText">Buying, selling, relocating or simply assessing your options? Start with a confidential conversation.</p>
+      </div>
+      <form class="form" id="contactForm">
+        <input required data-ph="name" placeholder="Name">
+        <input required type="email" data-ph="email" placeholder="Email">
+        <select id="interest"><option value="buying"></option><option value="selling"></option><option value="valuation"></option></select>
+        <textarea data-ph="message" placeholder="Tell me what you’re considering"></textarea>
+        <button type="submit" data-i18n="send">Request consultation</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer"><span>© 2026 Solenne Realty</span><span data-i18n="credit">Crafted by Senthan &amp; Co</span></div></footer>
+<button class="backtop" id="backtop" aria-label="Back to top">↑</button>
+
 <script>
 var I18N={
-EN:{brandSub:'PRIVATE REALTY',navProperties:'Properties',navApproach:'Approach',navResults:'Results',navContact:'Contact',heroEye:'Private property advisory · Selected homes',heroTitle:'Property,<br>personally<br>represented.',heroText:'A quieter, more considered way to buy and sell exceptional homes—guided by one advisor from first conversation to final signature.',viewHomes:'View selected homes',book:'Book a private consultation',years:'Years in residential property',clients:'Client transactions',referrals:'Referral-led introductions',curated:'Curated portfolio',selected:'Selected residences',selectedText:'A focused collection of homes chosen for architecture, location and long-term value.',signatureEye:'Signature interaction',journey:'Your property journey',journeyText:'Explore how the private-advisory process changes at each stage.',advisor:'Your advisor',aboutTitle:'One relationship. Every detail.',aboutText:'Solenne is built around continuity: one point of contact, thoughtful market intelligence and discreet representation from valuation through negotiation.',quote:'“The best property decisions begin with listening—not listings.”',avgMarket:'Average time to agreement',ask:'Average achieved vs asking',offMarket:'Off-market introductions',rating:'Client experience rating',private:'Private consultation',contactTitle:'Let’s discuss your next move.',contactText:'Buying, selling, relocating or simply assessing your options? Start with a confidential conversation.',buying:'Buying',selling:'Selling',valuation:'Valuation',send:'Request consultation',sent:'Request received',credit:'Crafted by Senthan & Co',name:'Name',email:'Email',message:'Tell me what you’re considering'},
-ES:{navProperties:'Propiedades',navApproach:'Enfoque',navResults:'Resultados',navContact:'Contacto',heroTitle:'Propiedad,<br>representada<br>personalmente.',viewHomes:'Ver propiedades',book:'Consulta privada',selected:'Residencias seleccionadas',journey:'Tu recorrido inmobiliario',advisor:'Tu asesor',contactTitle:'Hablemos de tu próximo paso.',buying:'Comprar',selling:'Vender',valuation:'Valoración',send:'Solicitar consulta',sent:'Solicitud recibida'},
-FR:{navProperties:'Biens',navApproach:'Approche',navResults:'Résultats',navContact:'Contact',heroTitle:'L’immobilier,<br>représenté<br>personnellement.',viewHomes:'Voir les biens',book:'Consultation privée',selected:'Résidences sélectionnées',journey:'Votre parcours immobilier',advisor:'Votre conseiller',contactTitle:'Parlons de votre prochain projet.',buying:'Acheter',selling:'Vendre',valuation:'Estimation',send:'Demander une consultation',sent:'Demande reçue'},
-DE:{navProperties:'Immobilien',navApproach:'Ansatz',navResults:'Ergebnisse',navContact:'Kontakt',heroTitle:'Immobilien,<br>persönlich<br>vertreten.',viewHomes:'Immobilien ansehen',book:'Privatberatung',selected:'Ausgewählte Residenzen',journey:'Ihre Immobilienreise',advisor:'Ihr Berater',contactTitle:'Sprechen wir über Ihren nächsten Schritt.',buying:'Kaufen',selling:'Verkaufen',valuation:'Bewertung',send:'Beratung anfragen',sent:'Anfrage erhalten'},
-PT:{navProperties:'Imóveis',navApproach:'Abordagem',navResults:'Resultados',navContact:'Contato',heroTitle:'Imóveis,<br>representados<br>pessoalmente.',viewHomes:'Ver imóveis',book:'Consulta privada',selected:'Residências selecionadas',journey:'Sua jornada imobiliária',advisor:'Seu consultor',contactTitle:'Vamos falar sobre seu próximo passo.',buying:'Comprar',selling:'Vender',valuation:'Avaliação',send:'Solicitar consulta',sent:'Pedido recebido'},
-AR:{navProperties:'العقارات',navApproach:'النهج',navResults:'النتائج',navContact:'اتصل',heroTitle:'عقار،<br>بتمثيل<br>شخصي.',viewHomes:'عرض العقارات',book:'استشارة خاصة',selected:'مساكن مختارة',journey:'رحلتك العقارية',advisor:'مستشارك',contactTitle:'لنتحدث عن خطوتك القادمة.',buying:'شراء',selling:'بيع',valuation:'تقييم',send:'طلب استشارة',sent:'تم استلام الطلب'},
-ZH:{navProperties:'房产',navApproach:'服务方式',navResults:'成果',navContact:'联系',heroTitle:'房产，<br>由专人<br>为您代理。',viewHomes:'查看精选房源',book:'预约私人咨询',selected:'精选住宅',journey:'您的置业旅程',advisor:'您的顾问',contactTitle:'聊聊您的下一步。',buying:'购买',selling:'出售',valuation:'估值',send:'申请咨询',sent:'已收到申请'}};
-Object.keys(I18N).forEach(function(l){I18N[l]=Object.assign({},I18N.EN,I18N[l])});
-var properties=[
-['R01','The Garden House','Riverside · 4 beds · 3 baths','$1.84M','https://images.pexels.com/photos/7031594/pexels-photo-7031594.jpeg?auto=compress&cs=tinysrgb&w=1400'],
-['R02','Maison Verre','Lakeside · 5 beds · 5 baths','$2.96M','https://images.pexels.com/photos/30781823/pexels-photo-30781823/free-photo-of-modern-luxury-villa-with-pool-exterior-at-twilight.jpeg?auto=compress&cs=tinysrgb&w=1200'],
-['R03','Cedar Court','North Ridge · 5 beds · 4 baths','$2.15M','https://images.pexels.com/photos/35361412/pexels-photo-35361412/free-photo-of-modern-luxury-house-with-glass-windows-and-wooden-finish.jpeg?auto=compress&cs=tinysrgb&w=1100'],
-['R04','Atelier Loft','Arts District · 2 beds · 2 baths','$890K','https://images.pexels.com/photos/32750273/pexels-photo-32750273/free-photo-of-modern-high-rise-apartment-with-city-view.jpeg?auto=compress&cs=tinysrgb&w=1100'],
-['R05','The Meridian','Central Quarter · 3 beds · 3 baths','$1.72M','https://images.pexels.com/photos/30506378/pexels-photo-30506378/free-photo-of-modern-luxury-apartment-architecture.jpeg?auto=compress&cs=tinysrgb&w=1100']];
-document.getElementById('propertyGrid').innerHTML=properties.map(function(p){return '<article class="property reveal"><div class="visual" data-code="'+p[0]+'"><img loading="lazy" src="'+p[4]+'" alt="'+p[1]+'"></div><div class="property-body"><div class="eyebrow">'+p[0]+'</div><h3>'+p[1]+'</h3><div class="meta">'+p[2]+'</div><div class="price">'+p[3]+'</div></div></article>'}).join('');
-var journey={EN:[['01','Discover','Priorities, timing and the life behind the move.'],['02','Curate','A tighter shortlist shaped by evidence, not volume.'],['03','Negotiate','Clear advice, private positioning and disciplined terms.'],['04','Complete','Coordination through diligence, signing and handover.']]};
-journey.ES=[['01','Descubrir','Prioridades, tiempos y contexto.'],['02','Seleccionar','Una lista breve basada en evidencia.'],['03','Negociar','Consejo claro y términos disciplinados.'],['04','Completar','Coordinación hasta la entrega.']];journey.FR=[['01','Découvrir','Priorités, calendrier et contexte.'],['02','Sélectionner','Une sélection resserrée et argumentée.'],['03','Négocier','Conseil clair et positionnement discret.'],['04','Finaliser','Coordination jusqu’à la remise des clés.']];journey.DE=journey.EN;journey.PT=journey.EN;journey.AR=[['01','اكتشاف','الأولويات والتوقيت والسياق.'],['02','اختيار','قائمة مختصرة مبنية على الأدلة.'],['03','تفاوض','نصيحة واضحة وشروط منضبطة.'],['04','إتمام','تنسيق حتى التسليم.']];journey.ZH=[['01','了解','明确优先事项、时间与需求。'],['02','精选','以依据而非数量形成短名单。'],['03','谈判','清晰建议与审慎条款。'],['04','完成','协调尽调、签约与交接。']];
-var current='EN';function renderSteps(){var s=journey[current]||journey.EN,box=document.getElementById('steps');box.innerHTML=s.map(function(x,i){return '<div class="step '+(i===0?'active':'')+'" data-i="'+i+'"><b>'+x[0]+' · '+x[1]+'</b><p>'+x[2]+'</p></div>'}).join('');box.querySelectorAll('.step').forEach(function(el){el.onclick=function(){box.querySelectorAll('.step').forEach(function(x){x.classList.remove('active')});el.classList.add('active');setPanel(+el.dataset.i)}});setPanel(0)}function setPanel(i){var x=(journey[current]||journey.EN)[i];panelKicker.textContent=x[0];panelTitle.textContent=x[1];panelText.textContent=x[2]}
-function applyLang(l){current=I18N[l]?l:'EN';document.documentElement.lang=current.toLowerCase();document.documentElement.dir=current==='AR'?'rtl':'ltr';document.querySelectorAll('[data-i18n]').forEach(function(el){var k=el.dataset.i18n;if(I18N[current][k])el.innerHTML=I18N[current][k]});document.querySelectorAll('[data-ph]').forEach(function(el){el.placeholder=I18N[current][el.dataset.ph]});renderSteps();try{localStorage.setItem('solenne-lang',current)}catch(e){}}
-var lang=document.getElementById('lang');try{current=localStorage.getItem('solenne-lang')||((navigator.language||'en').slice(0,2).toUpperCase());if(!I18N[current])current='EN'}catch(e){current='EN'}lang.value=current;lang.onchange=function(){applyLang(this.value)};applyLang(current);
-document.getElementById('theme').onclick=function(){var d=document.documentElement,now=d.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),next=now==='dark'?'light':'dark';d.dataset.theme=next;try{localStorage.setItem('solenne-theme',next)}catch(e){}};
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(x){io.observe(x)});var bt=document.getElementById('backtop');addEventListener('scroll',function(){bt.classList.toggle('show',scrollY>600)});bt.onclick=function(){scrollTo({top:0,behavior:'smooth'})};
-</script></body></html>
+EN:{
+ brandSub:"PRIVATE REALTY",navProperties:"Properties",navApproach:"Approach",navResults:"Results",navContact:"Contact",
+ heroEye:"Private property advisory · Selected homes",heroTitle:"Property,<br>personally<br>represented.",
+ heroText:"A quieter, more considered way to buy and sell exceptional homes—guided by one advisor from first conversation to final signature.",
+ viewHomes:"View selected homes",book:"Book a private consultation",agentRole:"Private Property Advisor",
+ years:"Years in residential property",clients:"Client transactions",referrals:"Referral-led introductions",
+ curated:"Curated portfolio",selected:"Selected residences",selectedText:"A focused collection of homes chosen for architecture, location and long-term value.",
+ storyTitle:"Architecture worth arriving home to.",storyText:"Homes selected for proportion, light and lasting appeal.",
+ signatureEye:"Signature interaction",journey:"Your property journey",journeyText:"Explore how the private-advisory process changes at each stage.",
+ advisor:"Your advisor",aboutTitle:"One relationship. Every detail.",aboutText:"Solenne is built around continuity: one point of contact, thoughtful market intelligence and discreet representation from valuation through negotiation.",
+ quote:"“The best property decisions begin with listening—not listings.”",avgMarket:"Average time to agreement",ask:"Average achieved vs asking",offMarket:"Off-market introductions",rating:"Client experience rating",
+ private:"Private consultation",contactTitle:"Let’s discuss your next move.",contactText:"Buying, selling, relocating or simply assessing your options? Start with a confidential conversation.",
+ buying:"Buying",selling:"Selling",valuation:"Valuation",name:"Name",email:"Email",message:"Tell me what you’re considering",send:"Request consultation",sent:"Request received",
+ credit:"Crafted by Senthan & Co",beds:"beds",baths:"baths",sqm:"sqm",forSale:"For sale",offMarketBadge:"Private listing",
+ step1:"Discover",step1p:"Clarify priorities, timing and lifestyle.",step2:"Curate",step2p:"Filter the market to what genuinely fits.",step3:"Negotiate",step3p:"Protect value, terms and position.",step4:"Complete",step4p:"Manage details through final signature.",
+ panel1k:"01 · Discover",panel1t:"Begin with the life, not the listing.",panel1p:"We define what matters before opening the market: location, rhythm, architecture, privacy, timing and investment horizon.",
+ panel2k:"02 · Curate",panel2t:"A smaller list. Better choices.",panel2p:"Public, private and off-market opportunities are filtered into a concise shortlist with clear trade-offs.",
+ panel3k:"03 · Negotiate",panel3t:"Calm representation when it counts.",panel3p:"Pricing intelligence, terms, timing and negotiation are handled as one strategy—not separate tasks.",
+ panel4k:"04 · Complete",panel4t:"From agreement to arrival.",panel4p:"The advisory relationship continues through diligence, documentation, handover and the small details around moving."
+},
+ES:{
+ brandSub:"INMOBILIARIA PRIVADA",navProperties:"Propiedades",navApproach:"Enfoque",navResults:"Resultados",navContact:"Contacto",
+ heroEye:"Asesoría inmobiliaria privada · Viviendas seleccionadas",heroTitle:"Propiedad,<br>representada<br>personalmente.",
+ heroText:"Una forma más tranquila y cuidada de comprar y vender viviendas excepcionales, guiada por un único asesor de principio a fin.",
+ viewHomes:"Ver viviendas seleccionadas",book:"Reservar consulta privada",agentRole:"Asesor Inmobiliario Privado",
+ years:"Años en propiedad residencial",clients:"Operaciones de clientes",referrals:"Presentaciones por recomendación",
+ curated:"Portafolio curado",selected:"Residencias seleccionadas",selectedText:"Una colección enfocada de viviendas elegidas por arquitectura, ubicación y valor a largo plazo.",
+ storyTitle:"Arquitectura a la que vale la pena volver.",storyText:"Viviendas elegidas por proporción, luz y atractivo duradero.",
+ signatureEye:"Interacción distintiva",journey:"Tu recorrido inmobiliario",journeyText:"Descubre cómo cambia el proceso de asesoría privada en cada etapa.",
+ advisor:"Tu asesor",aboutTitle:"Una relación. Cada detalle.",aboutText:"Solenne se basa en la continuidad: un solo contacto, inteligencia de mercado y representación discreta desde la valoración hasta la negociación.",
+ quote:"“Las mejores decisiones inmobiliarias empiezan escuchando, no listando.”",avgMarket:"Tiempo medio hasta acuerdo",ask:"Promedio logrado frente al precio pedido",offMarket:"Presentaciones fuera de mercado",rating:"Valoración de la experiencia",
+ private:"Consulta privada",contactTitle:"Hablemos de tu próximo movimiento.",contactText:"¿Comprar, vender, mudarte o valorar opciones? Empieza con una conversación confidencial.",
+ buying:"Comprar",selling:"Vender",valuation:"Valoración",name:"Nombre",email:"Correo",message:"Cuéntame qué estás considerando",send:"Solicitar consulta",sent:"Solicitud recibida",
+ credit:"Creado por Senthan & Co",beds:"dorm.",baths:"baños",sqm:"m²",forSale:"En venta",offMarketBadge:"Listado privado",
+ step1:"Descubrir",step1p:"Aclarar prioridades, tiempos y estilo de vida.",step2:"Seleccionar",step2p:"Filtrar el mercado a lo que realmente encaja.",step3:"Negociar",step3p:"Proteger valor, términos y posición.",step4:"Completar",step4p:"Gestionar detalles hasta la firma final.",
+ panel1k:"01 · Descubrir",panel1t:"Empieza por la vida, no por el anuncio.",panel1p:"Definimos lo importante antes de abrir el mercado: ubicación, ritmo, arquitectura, privacidad, tiempos y horizonte de inversión.",
+ panel2k:"02 · Seleccionar",panel2t:"Una lista más corta. Mejores decisiones.",panel2p:"Las oportunidades públicas, privadas y fuera de mercado se filtran en una selección concisa con ventajas claras.",
+ panel3k:"03 · Negociar",panel3t:"Representación serena cuando importa.",panel3p:"Inteligencia de precios, términos, tiempos y negociación se gestionan como una sola estrategia.",
+ panel4k:"04 · Completar",panel4t:"Del acuerdo a la llegada.",panel4p:"La asesoría continúa durante diligencia, documentación, entrega y los pequeños detalles de la mudanza."
+},
+FR:{
+ brandSub:"IMMOBILIER PRIVÉ",navProperties:"Biens",navApproach:"Approche",navResults:"Résultats",navContact:"Contact",
+ heroEye:"Conseil immobilier privé · Biens sélectionnés",heroTitle:"L’immobilier,<br>représenté<br>personnellement.",
+ heroText:"Une manière plus calme et plus réfléchie d’acheter et vendre des biens d’exception, avec un seul conseiller du premier échange à la signature.",
+ viewHomes:"Voir les biens sélectionnés",book:"Réserver une consultation privée",agentRole:"Conseiller Immobilier Privé",
+ years:"Années en immobilier résidentiel",clients:"Transactions clients",referrals:"Mises en relation par recommandation",
+ curated:"Portefeuille sélectionné",selected:"Résidences choisies",selectedText:"Une collection ciblée choisie pour l’architecture, l’emplacement et la valeur à long terme.",
+ storyTitle:"Une architecture qui donne envie de rentrer.",storyText:"Des maisons choisies pour leurs proportions, leur lumière et leur attrait durable.",
+ signatureEye:"Interaction signature",journey:"Votre parcours immobilier",journeyText:"Découvrez comment le conseil privé évolue à chaque étape.",
+ advisor:"Votre conseiller",aboutTitle:"Une relation. Chaque détail.",aboutText:"Solenne repose sur la continuité : un seul interlocuteur, une lecture fine du marché et une représentation discrète de l’évaluation à la négociation.",
+ quote:"« Les meilleures décisions immobilières commencent par l’écoute, pas par les annonces. »",avgMarket:"Délai moyen jusqu’à l’accord",ask:"Prix obtenu moyen vs demandé",offMarket:"Introductions hors marché",rating:"Note d’expérience client",
+ private:"Consultation privée",contactTitle:"Parlons de votre prochaine étape.",contactText:"Acheter, vendre, déménager ou simplement évaluer vos options ? Commençons par un échange confidentiel.",
+ buying:"Acheter",selling:"Vendre",valuation:"Estimation",name:"Nom",email:"E-mail",message:"Dites-moi ce que vous envisagez",send:"Demander une consultation",sent:"Demande reçue",
+ credit:"Créé par Senthan & Co",beds:"ch.",baths:"sdb",sqm:"m²",forSale:"À vendre",offMarketBadge:"Bien privé",
+ step1:"Découvrir",step1p:"Clarifier priorités, calendrier et style de vie.",step2:"Sélectionner",step2p:"Filtrer le marché selon ce qui convient vraiment.",step3:"Négocier",step3p:"Protéger valeur, conditions et position.",step4:"Finaliser",step4p:"Gérer les détails jusqu’à la signature.",
+ panel1k:"01 · Découvrir",panel1t:"Commencer par la vie, pas par l’annonce.",panel1p:"Nous définissons l’essentiel avant d’ouvrir le marché : lieu, rythme, architecture, intimité, calendrier et horizon d’investissement.",
+ panel2k:"02 · Sélectionner",panel2t:"Moins de biens. De meilleurs choix.",panel2p:"Les opportunités publiques, privées et hors marché sont filtrées en une sélection concise aux compromis clairs.",
+ panel3k:"03 · Négocier",panel3t:"Une représentation sereine au bon moment.",panel3p:"Prix, conditions, calendrier et négociation sont gérés comme une stratégie unique.",
+ panel4k:"04 · Finaliser",panel4t:"De l’accord à l’installation.",panel4p:"Le conseil se poursuit durant les vérifications, les documents, la remise des clés et les détails du déménagement."
+},
+DE:{
+ brandSub:"PRIVATE IMMOBILIEN",navProperties:"Immobilien",navApproach:"Ansatz",navResults:"Ergebnisse",navContact:"Kontakt",
+ heroEye:"Private Immobilienberatung · Ausgewählte Häuser",heroTitle:"Immobilien,<br>persönlich<br>vertreten.",
+ heroText:"Eine ruhigere, durchdachtere Art, außergewöhnliche Immobilien zu kaufen und zu verkaufen – begleitet von einer Person vom ersten Gespräch bis zur Unterschrift.",
+ viewHomes:"Ausgewählte Häuser ansehen",book:"Private Beratung buchen",agentRole:"Private Immobilienberaterin",
+ years:"Jahre im Wohnimmobilienbereich",clients:"Kundentransaktionen",referrals:"Empfehlungsbasierte Kontakte",
+ curated:"Kuratierte Auswahl",selected:"Ausgewählte Residenzen",selectedText:"Eine fokussierte Auswahl nach Architektur, Lage und langfristigem Wert.",
+ storyTitle:"Architektur, zu der man gerne heimkehrt.",storyText:"Häuser ausgewählt nach Proportion, Licht und bleibender Qualität.",
+ signatureEye:"Signatur-Interaktion",journey:"Ihre Immobilienreise",journeyText:"Erleben Sie, wie sich die private Beratung in jeder Phase verändert.",
+ advisor:"Ihre Beratung",aboutTitle:"Eine Beziehung. Jedes Detail.",aboutText:"Solenne steht für Kontinuität: ein Ansprechpartner, fundierte Marktkenntnis und diskrete Vertretung von der Bewertung bis zur Verhandlung.",
+ quote:"„Die besten Immobilienentscheidungen beginnen mit Zuhören – nicht mit Inseraten.“",avgMarket:"Durchschnitt bis zur Einigung",ask:"Durchschnitt erzielt vs Angebot",offMarket:"Off-Market-Einführungen",rating:"Bewertung der Kundenerfahrung",
+ private:"Private Beratung",contactTitle:"Sprechen wir über Ihren nächsten Schritt.",contactText:"Kaufen, verkaufen, umziehen oder Optionen prüfen? Beginnen wir mit einem vertraulichen Gespräch.",
+ buying:"Kaufen",selling:"Verkaufen",valuation:"Bewertung",name:"Name",email:"E-Mail",message:"Was ziehen Sie in Betracht?",send:"Beratung anfragen",sent:"Anfrage erhalten",
+ credit:"Gestaltet von Senthan & Co",beds:"Schlafz.",baths:"Bäder",sqm:"m²",forSale:"Zu verkaufen",offMarketBadge:"Private Offerte",
+ step1:"Entdecken",step1p:"Prioritäten, Timing und Lebensstil klären.",step2:"Kuratieren",step2p:"Den Markt auf echte Passung filtern.",step3:"Verhandeln",step3p:"Wert, Bedingungen und Position schützen.",step4:"Abschließen",step4p:"Details bis zur finalen Unterschrift begleiten.",
+ panel1k:"01 · Entdecken",panel1t:"Mit dem Leben beginnen, nicht mit dem Inserat.",panel1p:"Wir definieren vor der Marktsuche, was zählt: Lage, Rhythmus, Architektur, Privatsphäre, Zeitplan und Anlagehorizont.",
+ panel2k:"02 · Kuratieren",panel2t:"Weniger Auswahl. Bessere Entscheidungen.",panel2p:"Öffentliche, private und Off-Market-Chancen werden zu einer klaren Shortlist mit transparenten Abwägungen.",
+ panel3k:"03 · Verhandeln",panel3t:"Ruhige Vertretung, wenn es zählt.",panel3p:"Preiswissen, Bedingungen, Timing und Verhandlung werden als eine Strategie geführt.",
+ panel4k:"04 · Abschließen",panel4t:"Von der Einigung bis zum Einzug.",panel4p:"Die Beratung begleitet Prüfung, Dokumentation, Übergabe und die kleinen Details rund um den Umzug."
+},
+PT:{
+ brandSub:"IMOBILIÁRIO PRIVADO",navProperties:"Imóveis",navApproach:"Abordagem",navResults:"Resultados",navContact:"Contacto",
+ heroEye:"Consultoria imobiliária privada · Casas selecionadas",heroTitle:"Imóveis,<br>representados<br>pessoalmente.",
+ heroText:"Uma forma mais tranquila e cuidadosa de comprar e vender imóveis excecionais, guiada por um único consultor do primeiro contacto à assinatura.",
+ viewHomes:"Ver casas selecionadas",book:"Marcar consulta privada",agentRole:"Consultora Imobiliária Privada",
+ years:"Anos no imobiliário residencial",clients:"Transações de clientes",referrals:"Apresentações por recomendação",
+ curated:"Portefólio curado",selected:"Residências selecionadas",selectedText:"Uma coleção focada, escolhida pela arquitetura, localização e valor de longo prazo.",
+ storyTitle:"Arquitetura à qual vale a pena regressar.",storyText:"Casas selecionadas pela proporção, luz e apelo duradouro.",
+ signatureEye:"Interação de assinatura",journey:"A sua jornada imobiliária",journeyText:"Veja como o processo de consultoria privada muda em cada etapa.",
+ advisor:"A sua consultora",aboutTitle:"Uma relação. Cada detalhe.",aboutText:"Solenne assenta na continuidade: um único contacto, inteligência de mercado e representação discreta da avaliação à negociação.",
+ quote:"“As melhores decisões imobiliárias começam por ouvir, não por listar.”",avgMarket:"Tempo médio até acordo",ask:"Média obtida vs preço pedido",offMarket:"Apresentações fora do mercado",rating:"Avaliação da experiência",
+ private:"Consulta privada",contactTitle:"Falemos do seu próximo passo.",contactText:"Comprar, vender, mudar ou apenas avaliar opções? Comece com uma conversa confidencial.",
+ buying:"Comprar",selling:"Vender",valuation:"Avaliação",name:"Nome",email:"E-mail",message:"Conte-me o que está a considerar",send:"Pedir consulta",sent:"Pedido recebido",
+ credit:"Criado por Senthan & Co",beds:"quartos",baths:"banhos",sqm:"m²",forSale:"À venda",offMarketBadge:"Imóvel privado",
+ step1:"Descobrir",step1p:"Clarificar prioridades, prazos e estilo de vida.",step2:"Selecionar",step2p:"Filtrar o mercado para o que realmente encaixa.",step3:"Negociar",step3p:"Proteger valor, termos e posição.",step4:"Concluir",step4p:"Gerir detalhes até à assinatura final.",
+ panel1k:"01 · Descobrir",panel1t:"Começar pela vida, não pelo anúncio.",panel1p:"Definimos o que importa antes de abrir o mercado: localização, ritmo, arquitetura, privacidade, prazos e horizonte de investimento.",
+ panel2k:"02 · Selecionar",panel2t:"Uma lista menor. Melhores escolhas.",panel2p:"Oportunidades públicas, privadas e off-market são filtradas numa seleção concisa com compromissos claros.",
+ panel3k:"03 · Negociar",panel3t:"Representação serena quando importa.",panel3p:"Inteligência de preços, termos, prazos e negociação são tratados como uma única estratégia.",
+ panel4k:"04 · Concluir",panel4t:"Do acordo à chegada.",panel4p:"A consultoria continua pela diligência, documentação, entrega e pequenos detalhes da mudança."
+},
+AR:{
+ brandSub:"عقارات خاصة",navProperties:"العقارات",navApproach:"النهج",navResults:"النتائج",navContact:"تواصل",
+ heroEye:"استشارات عقارية خاصة · منازل مختارة",heroTitle:"العقار،<br>بتمثيل<br>شخصي.",
+ heroText:"طريقة أكثر هدوءًا ودقة لشراء وبيع المنازل الاستثنائية، مع مستشار واحد من أول محادثة حتى التوقيع النهائي.",
+ viewHomes:"عرض المنازل المختارة",book:"احجز استشارة خاصة",agentRole:"مستشارة عقارية خاصة",
+ years:"سنوات في العقارات السكنية",clients:"معاملات العملاء",referrals:"تعارف عبر التوصيات",
+ curated:"محفظة منتقاة",selected:"مساكن مختارة",selectedText:"مجموعة مركزة من المنازل المختارة للهندسة والموقع والقيمة طويلة الأجل.",
+ storyTitle:"هندسة معمارية تستحق العودة إليها.",storyText:"منازل مختارة للتناسب والضوء والجاذبية الدائمة.",
+ signatureEye:"تجربة مميزة",journey:"رحلتك العقارية",journeyText:"اكتشف كيف تتغير الاستشارة الخاصة في كل مرحلة.",
+ advisor:"مستشارك",aboutTitle:"علاقة واحدة. كل التفاصيل.",aboutText:"تعتمد Solenne على الاستمرارية: نقطة اتصال واحدة، فهم مدروس للسوق وتمثيل سري من التقييم حتى التفاوض.",
+ quote:"«أفضل القرارات العقارية تبدأ بالاستماع، لا بالقوائم.»",avgMarket:"متوسط الوقت حتى الاتفاق",ask:"متوسط المحقق مقابل المطلوب",offMarket:"فرص خارج السوق",rating:"تقييم تجربة العميل",
+ private:"استشارة خاصة",contactTitle:"لنتحدث عن خطوتك القادمة.",contactText:"شراء أو بيع أو انتقال أو مجرد تقييم الخيارات؟ ابدأ بمحادثة سرية.",
+ buying:"شراء",selling:"بيع",valuation:"تقييم",name:"الاسم",email:"البريد الإلكتروني",message:"أخبرني بما تفكر فيه",send:"اطلب استشارة",sent:"تم استلام الطلب",
+ credit:"صنع بواسطة Senthan & Co",beds:"غرف",baths:"حمامات",sqm:"م²",forSale:"للبيع",offMarketBadge:"عرض خاص",
+ step1:"اكتشاف",step1p:"توضيح الأولويات والتوقيت ونمط الحياة.",step2:"انتقاء",step2p:"تصفية السوق لما يناسب حقًا.",step3:"تفاوض",step3p:"حماية القيمة والشروط والموقف.",step4:"إتمام",step4p:"إدارة التفاصيل حتى التوقيع النهائي.",
+ panel1k:"01 · اكتشاف",panel1t:"ابدأ بالحياة، لا بالإعلان.",panel1p:"نحدد ما يهم قبل فتح السوق: الموقع، الإيقاع، الهندسة، الخصوصية، التوقيت وأفق الاستثمار.",
+ panel2k:"02 · انتقاء",panel2t:"قائمة أصغر. خيارات أفضل.",panel2p:"تُصفّى الفرص العامة والخاصة وخارج السوق إلى قائمة موجزة بمفاضلات واضحة.",
+ panel3k:"03 · تفاوض",panel3t:"تمثيل هادئ عندما يكون مهمًا.",panel3p:"معرفة الأسعار والشروط والتوقيت والتفاوض تُدار كاستراتيجية واحدة.",
+ panel4k:"04 · إتمام",panel4t:"من الاتفاق إلى الوصول.",panel4p:"تستمر الاستشارة خلال الفحص والوثائق والتسليم وتفاصيل الانتقال الصغيرة."
+},
+ZH:{
+ brandSub:"私人地产",navProperties:"房源",navApproach:"服务方式",navResults:"成果",navContact:"联系",
+ heroEye:"私人地产顾问 · 精选住宅",heroTitle:"地产，<br>由专人<br>代表。",
+ heroText:"以更从容、更审慎的方式买卖卓越住宅，从第一次沟通到最终签字始终由同一位顾问陪伴。",
+ viewHomes:"查看精选住宅",book:"预约私人咨询",agentRole:"私人地产顾问",
+ years:"住宅地产经验年限",clients:"客户交易",referrals:"来自推荐的客户",
+ curated:"精选组合",selected:"精选住宅",selectedText:"依据建筑、地段和长期价值精选的住宅组合。",
+ storyTitle:"值得每天回家的建筑。",storyText:"以比例、采光与持久吸引力挑选住宅。",
+ signatureEye:"特色互动",journey:"你的置业旅程",journeyText:"了解私人顾问服务在每个阶段如何变化。",
+ advisor:"你的顾问",aboutTitle:"一段关系。每个细节。",aboutText:"Solenne 强调连续性：单一联系人、深入市场洞察，并从估值到谈判提供低调专业的代表。",
+ quote:"“最好的地产决定始于倾听，而不是房源列表。”",avgMarket:"平均达成协议时间",ask:"成交价与要价平均比",offMarket:"非公开房源引荐",rating:"客户体验评分",
+ private:"私人咨询",contactTitle:"聊聊你的下一步。",contactText:"买房、卖房、搬迁，或只是评估选择？从一次保密交流开始。",
+ buying:"购买",selling:"出售",valuation:"估值",name:"姓名",email:"邮箱",message:"告诉我你正在考虑什么",send:"申请咨询",sent:"已收到申请",
+ credit:"由 Senthan & Co 打造",beds:"卧室",baths:"浴室",sqm:"平方米",forSale:"出售",offMarketBadge:"私人房源",
+ step1:"发现",step1p:"明确优先事项、时间和生活方式。",step2:"筛选",step2p:"从市场中筛出真正适合的选择。",step3:"谈判",step3p:"保护价值、条款与立场。",step4:"完成",step4p:"管理细节直至最终签字。",
+ panel1k:"01 · 发现",panel1t:"先从生活开始，而不是房源。",panel1p:"在打开市场之前，我们先明确真正重要的因素：地段、节奏、建筑、隐私、时间与投资周期。",
+ panel2k:"02 · 筛选",panel2t:"更短的名单，更好的选择。",panel2p:"公开、私人及非公开机会被筛选成精简清晰的候选名单。",
+ panel3k:"03 · 谈判",panel3t:"关键时刻，沉着代表。",panel3p:"价格洞察、条款、时间与谈判被作为一套完整策略处理。",
+ panel4k:"04 · 完成",panel4t:"从达成协议到正式入住。",panel4p:"顾问关系持续覆盖尽调、文件、交接以及搬家相关的小细节。"
+}
+};
+
+var PROPERTY_DATA=[
+ {name:"Villa Aurea",location:"Clifftop District",price:"$2.85M",beds:4,baths:5,sqm:420,badge:"forSale",img:"https://images.pexels.com/photos/31817156/pexels-photo-31817156/free-photo-of-modern-luxury-villa-with-infinity-pool.jpeg?auto=compress&dpr=1&h=900&w=1400"},
+ {name:"The Linden Residence",location:"Garden Quarter",price:"$1.64M",beds:4,baths:3,sqm:318,badge:"forSale",img:"https://images.pexels.com/photos/7031607/pexels-photo-7031607.jpeg?auto=compress&dpr=1&h=900&w=1400"},
+ {name:"Atelier 08",location:"Central Arts District",price:"$980K",beds:2,baths:2,sqm:148,badge:"offMarketBadge",img:"https://images.pexels.com/photos/8082227/pexels-photo-8082227.jpeg?auto=compress&dpr=1&h=900&w=1400"},
+ {name:"Casa Verre",location:"South Ridge",price:"$2.18M",beds:3,baths:4,sqm:350,badge:"forSale",img:"https://images.pexels.com/photos/28586202/pexels-photo-28586202/free-photo-of-modern-luxury-home-with-glass-facade-and-pool.jpeg?auto=compress&dpr=1&h=900&w=1400"}
+];
+
+var current="EN";
+var journeyImages=[
+ "https://images.pexels.com/photos/8815878/pexels-photo-8815878.jpeg?auto=compress&dpr=1&h=900&w=1300",
+ "https://images.pexels.com/photos/8082227/pexels-photo-8082227.jpeg?auto=compress&dpr=1&h=900&w=1300",
+ "https://images.pexels.com/photos/31817156/pexels-photo-31817156/free-photo-of-modern-luxury-villa-with-infinity-pool.jpeg?auto=compress&dpr=1&h=900&w=1300",
+ "https://images.pexels.com/photos/28586202/pexels-photo-28586202/free-photo-of-modern-luxury-home-with-glass-facade-and-pool.jpeg?auto=compress&dpr=1&h=900&w=1300"
+];
+
+function safeSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function safeGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+
+function renderProperties(){
+ var t=I18N[current],g=document.getElementById("propertyGrid");
+ g.innerHTML=PROPERTY_DATA.map(function(p){
+  return '<article class="property reveal">'+
+   '<div class="property-visual"><img src="'+p.img+'" alt="'+p.name+'"><span class="badge">'+t[p.badge]+'</span><span class="property-price">'+p.price+'</span></div>'+
+   '<div class="property-body"><h3>'+p.name+'</h3><div class="location">'+p.location+'</div>'+
+   '<div class="meta"><span>'+p.beds+' '+t.beds+'</span><span>'+p.baths+' '+t.baths+'</span><span>'+p.sqm+' '+t.sqm+'</span></div></div></article>'
+ }).join("");
+ observeReveals();
+}
+
+function renderSteps(active){
+ var t=I18N[current],s=document.getElementById("steps");
+ s.innerHTML=[1,2,3,4].map(function(n,i){
+  return '<button class="step '+(i===active?"active":"")+'" data-step="'+i+'"><b>'+t["step"+n]+'</b><p>'+t["step"+n+"p"]+'</p></button>'
+ }).join("");
+ s.querySelectorAll(".step").forEach(function(btn){btn.addEventListener("click",function(){setJourney(+btn.dataset.step)})});
+}
+function setJourney(i){
+ var t=I18N[current];
+ renderSteps(i);
+ document.getElementById("panelKicker").textContent=t["panel"+(i+1)+"k"];
+ document.getElementById("panelTitle").textContent=t["panel"+(i+1)+"t"];
+ document.getElementById("panelText").textContent=t["panel"+(i+1)+"p"];
+ document.getElementById("journeyPanel").style.backgroundImage='url("'+journeyImages[i]+'")';
+}
+
+function applyLang(code){
+ current=I18N[code]?code:"EN";var t=I18N[current];
+ document.documentElement.lang=current.toLowerCase();
+ document.documentElement.dir=current==="AR"?"rtl":"ltr";
+ document.querySelectorAll("[data-i18n]").forEach(function(el){var k=el.dataset.i18n;if(t[k]!=null)el.innerHTML=t[k]});
+ document.querySelectorAll("[data-ph]").forEach(function(el){var k=el.dataset.ph;if(t[k]!=null)el.placeholder=t[k]});
+ var interest=document.getElementById("interest");
+ if(interest){["buying","selling","valuation"].forEach(function(k,i){interest.options[i].textContent=t[k]})}
+ document.getElementById("lang").value=current;
+ safeSet("solenne-lang",current);
+ renderProperties();setJourney(0);
+}
+
+var observer;
+function observeReveals(){
+ if(!observer)observer=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");observer.unobserve(e.target)}})},{threshold:.12});
+ document.querySelectorAll(".reveal:not(.in)").forEach(function(el){observer.observe(el)});
+}
+
+document.getElementById("theme").addEventListener("click",function(){
+ var d=document.documentElement,now=d.dataset.theme||((matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light");
+ d.dataset.theme=now==="dark"?"light":"dark";safeSet("solenne-theme",d.dataset.theme)
+});
+document.getElementById("lang").addEventListener("change",function(){applyLang(this.value)});
+document.getElementById("menu").addEventListener("click",function(){document.getElementById("mobilePanel").classList.toggle("open")});
+document.querySelectorAll("#mobilePanel a").forEach(function(a){a.addEventListener("click",function(){document.getElementById("mobilePanel").classList.remove("open")})});
+document.getElementById("contactForm").addEventListener("submit",function(e){e.preventDefault();var b=this.querySelector("button");b.textContent=I18N[current].sent;setTimeout(function(){b.textContent=I18N[current].send},2200)});
+var back=document.getElementById("backtop");
+addEventListener("scroll",function(){back.classList.toggle("show",scrollY>650)});
+back.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"})});
+
+(function init(){
+ var saved=safeGet("solenne-lang");
+ var raw=(navigator.language||"en").toUpperCase();
+ var auto=raw.indexOf("ES")===0?"ES":raw.indexOf("FR")===0?"FR":raw.indexOf("DE")===0?"DE":raw.indexOf("PT")===0?"PT":raw.indexOf("AR")===0?"AR":raw.indexOf("ZH")===0?"ZH":"EN";
+ applyLang(saved||auto);observeReveals();
+})();
+</script>
+</body>
+</html>
