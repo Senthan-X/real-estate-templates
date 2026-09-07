@@ -5,7 +5,7 @@ A collection of distinct, multilingual real-estate website templates crafted by 
 ## Production order
 
 1. Aurelia Estates — Luxury Real Estate Agency
-2. Modern Property Marketplace
+2. Nestgrid — Modern Property Marketplace
 3. Urban Apartment & Rental Portal
 4. Property Developer & New Projects
 5. Independent Real Estate Agent Portfolio
@@ -18,4 +18,9 @@ Each deployment build is a zero-dependency, self-contained HTML file with Base64
 
 ## Current project
 
-Version 1 is located in `templates/aurelia-estates/`.
+Version 2 is located in `templates/nestgrid-marketplace/`.
+
+## Completed templates
+
+- Version 1: `templates/aurelia-estates/`
+- Version 2: `templates/nestgrid-marketplace/` (initial build)
