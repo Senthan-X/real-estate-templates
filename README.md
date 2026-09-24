@@ -18,7 +18,7 @@ Each deployment build is a zero-dependency, self-contained HTML file with Base64
 
 ## Current project
 
-Version 9, Gavel & Ground, is located in `templates/gavel-ground-auctions/`. Versions 1–9 are in this single collection.
+Version 10, FORMA / Property & Place, is located in `templates/forma-property-place/`. Versions 1–10 are in this single collection.
 
 ## Completed templates
 
@@ -31,3 +31,4 @@ Version 9, Gavel & Ground, is located in `templates/gavel-ground-auctions/`. Ver
 - Version 7: `templates/nia-kato-agent/`
 - Version 8: `templates/terra-atlas-investment/`
 - Version 9: `templates/gavel-ground-auctions/`
+- Version 10: `templates/forma-property-place/`
