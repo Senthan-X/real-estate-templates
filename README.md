@@ -18,7 +18,7 @@ Each deployment build is a zero-dependency, self-contained HTML file with Base64
 
 ## Current project
 
-Version 7, Nia Kato, is located in `templates/nia-kato-agent/`.
+Version 9, Gavel & Ground, is located in `templates/gavel-ground-auctions/`. Versions 1–9 are in this single collection.
 
 ## Completed templates
 
@@ -29,3 +29,5 @@ Version 7, Nia Kato, is located in `templates/nia-kato-agent/`.
 - Version 5: `templates/solenne-realty/`
 - Version 6: `templates/atlas-developments/`
 - Version 7: `templates/nia-kato-agent/`
+- Version 8: `templates/terra-atlas-investment/`
+- Version 9: `templates/gavel-ground-auctions/`
