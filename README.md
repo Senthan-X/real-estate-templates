@@ -18,7 +18,7 @@ Each deployment build is a zero-dependency, self-contained HTML file with Base64
 
 ## Current project
 
-Version 6, ATLAS Developments, is located in `templates/atlas-developments/`.
+Version 7, Nia Kato, is located in `templates/nia-kato-agent/`.
 
 ## Completed templates
 
@@ -28,3 +28,4 @@ Version 6, ATLAS Developments, is located in `templates/atlas-developments/`.
 - Version 4: `templates/solara-stays/`
 - Version 5: `templates/solenne-realty/`
 - Version 6: `templates/atlas-developments/`
+- Version 7: `templates/nia-kato-agent/`
