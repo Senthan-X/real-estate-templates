@@ -18,7 +18,7 @@ Each deployment build is a zero-dependency, self-contained HTML file with Base64
 
 ## Current project
 
-Version 10, FORMA / Property & Place, is located in `templates/forma-property-place/`. Versions 1–10 are in this single collection.
+Version 11, PARCEL / Commercial Property Advisory, is located in `templates/parcel-commercial/`. Versions 1–11 are in this single collection.
 
 ## Completed templates
 
@@ -32,3 +32,4 @@ Version 10, FORMA / Property & Place, is located in `templates/forma-property-pl
 - Version 8: `templates/terra-atlas-investment/`
 - Version 9: `templates/gavel-ground-auctions/`
 - Version 10: `templates/forma-property-place/`
+- Version 11: `templates/parcel-commercial/`
