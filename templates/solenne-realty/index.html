@@ -182,6 +182,10 @@ footer{padding:45px 0;color:var(--muted);font-size:12px}
   .sold{grid-template-columns:1fr}.sold article+article,.sold article:nth-child(3){border-left:0;border-top:1px solid var(--line)}
   .footer{display:block}.footer span{display:block;margin-top:7px}
 }
+
+/* Accessible catalog close-up preview */
+.catalog-preview{width:min(1100px,94vw);max-width:1100px;max-height:94dvh;padding:0;border:1px solid #ffffff50;border-radius:18px;background:#101513;color:#fff;box-shadow:0 28px 90px #000b;overflow:hidden}.catalog-preview::backdrop{background:#050807d9;backdrop-filter:blur(5px)}.catalog-preview__frame{position:relative;display:grid;grid-template-rows:minmax(0,1fr) auto;max-height:94dvh}.catalog-preview__image{width:100%;height:min(78dvh,820px);object-fit:contain;background:#070a08}.catalog-preview__caption{padding:13px 18px 16px;color:#fff;font:500 14px/1.4 Arial,Helvetica,sans-serif}.catalog-preview__close{position:absolute;z-index:2;top:12px;right:12px;width:44px;height:44px;border:1px solid #ffffff70;border-radius:50%;background:#07100fc9;color:#fff;font-size:26px;line-height:1;cursor:pointer}.catalog-preview__close:focus-visible{outline:3px solid #fff;outline-offset:3px}.catalog-preview-trigger{cursor:zoom-in}.catalog-preview-trigger:focus-visible{outline:3px solid #2866ff;outline-offset:3px}
+@media(max-width:600px){.catalog-preview{width:96vw;border-radius:12px}.catalog-preview__image{height:76dvh}.catalog-preview__caption{padding:11px 14px 14px}}
 </style>
 </head>
 <body>
@@ -402,5 +406,19 @@ back.addEventListener("click",function(){scrollTo({top:0,behavior:"smooth"})});
  applyLang(saved||auto);observeReveals();
 })();
 </script>
-</body>
+<dialog class="catalog-preview" aria-label="Property image close-up"><div class="catalog-preview__frame"><button class="catalog-preview__close" type="button" aria-label="Close image preview" title="Close image preview">×</button><img class="catalog-preview__image" alt=""><div class="catalog-preview__caption" aria-live="polite"></div></div></dialog><script>
+(function(){
+ var dialog=document.querySelector('.catalog-preview');if(!dialog)return;
+ var image=dialog.querySelector('.catalog-preview__image'),caption=dialog.querySelector('.catalog-preview__caption'),close=dialog.querySelector('.catalog-preview__close'),lastFocus=null;
+ var strings={en:'Close image preview',es:'Cerrar vista previa de imagen',fr:'Fermer l’aperçu de l’image',de:'Bildvorschau schließen',pt:'Fechar pré-visualização da imagem',ar:'إغلاق معاينة الصورة',zh:'关闭图片预览',sw:'Funga hakikisho la picha'};
+ function currentLabel(){var lang=(document.documentElement.lang||'en').slice(0,2).toLowerCase();return strings[lang]||strings.en}
+ function imageFrom(el){if(el.matches('img'))return el.currentSrc||el.src;var bg=getComputedStyle(el).backgroundImage,match=bg.match(/url\(["']?(.*?)["']?\)/);return match?match[1]:''}
+ function openPreview(trigger){var src=imageFrom(trigger);if(!src)return;lastFocus=trigger;var card=trigger.closest('article,.card,.property,.listing');var title=card&&card.querySelector('h2,h3,h4');var alt=trigger.matches('img')?trigger.alt:(trigger.getAttribute('aria-label')||'');image.src=src;image.alt=alt|| (title?title.textContent.trim():'Property image');caption.textContent=[title&&title.textContent.trim(),alt].filter(Boolean).filter(function(v,i,a){return a.indexOf(v)===i}).join(' · ')||image.alt;close.setAttribute('aria-label',currentLabel());close.title=currentLabel();if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');close.focus()}
+ var selector='.catalog img,.gallery .card-image img,.grid .card img,.listings .card-media img,.property-img img,.properties .property-visual img,.list-grid .listing-media img,.grid .photo';
+ document.addEventListener('click',function(e){var trigger=e.target.closest(selector);if(!trigger)return;if(e.target.closest('button'))return;e.preventDefault();openPreview(trigger)});
+ document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches(selector)){e.preventDefault();openPreview(e.target)}});
+ document.querySelectorAll(selector).forEach(function(el){el.classList.add('catalog-preview-trigger');if(el.matches('img')&&!el.hasAttribute('tabindex'))el.tabIndex=0;if(el.matches('img')&&!el.hasAttribute('role'))el.setAttribute('role','button');if(el.matches('.photo')){el.tabIndex=0;el.setAttribute('role','button')}});
+ close.addEventListener('click',function(){dialog.close?dialog.close():dialog.removeAttribute('open')});dialog.addEventListener('click',function(e){if(e.target===dialog)dialog.close?dialog.close():dialog.removeAttribute('open')});dialog.addEventListener('close',function(){if(lastFocus&&lastFocus.isConnected)lastFocus.focus()});
+})();
+</script></body>
 </html>
